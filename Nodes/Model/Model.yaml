@@ -1,0 +1,126 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- File: PLC_Sim/PLC_Sim.yaml
+- Name: UDT_Switch
+  Id: g=c4bffd8c741ce8ad1e21433df7f69a12
+  Supertype: BaseObjectType
+  Children:
+  - Name: BitState
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Children:
+    - Name: AuditSigning Signature
+      Type: AuditInfo
+      ReferenceType: NonHierarchicalOwning
+      Children:
+      - Name: Users
+        Type: BaseObjectType
+      - Name: Groups
+        Type: BaseObjectType
+  - Name: MultiState
+    Type: BaseDataVariableType
+    DataType: Int32
+    Children:
+    - Name: AuditSigning Signature
+      Type: AuditInfo
+      ReferenceType: NonHierarchicalOwning
+      Children:
+      - Name: Users
+        Type: BaseObjectType
+      - Name: Groups
+        Type: BaseObjectType
+- Name: UDT_Switch1
+  Type: UDT_Switch
+  Children:
+  - Name: BitState
+    Type: BaseDataVariableType
+    DataType: Boolean
+    DisplayName: {"LocaleId":"en-US","Text":"Switch 01 Bit Name"}
+    Children:
+    - Name: AuditSigning Signature
+      Type: AuditInfo
+      ReferenceType: NonHierarchicalOwning
+      Children:
+      - Name: Users
+        Type: BaseObjectType
+      - Name: Groups
+        Type: BaseObjectType
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../PLC_Sim/Bool1"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: MultiState
+    Type: BaseDataVariableType
+    DataType: Int32
+    DisplayName: {"LocaleId":"en-US","Text":"Switch 01 Int Name"}
+    Children:
+    - Name: AuditSigning Signature
+      Type: AuditInfo
+      ReferenceType: NonHierarchicalOwning
+      Children:
+      - Name: Users
+        Type: BaseObjectType
+      - Name: Groups
+        Type: BaseObjectType
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../PLC_Sim/Int1"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+- Name: UDT_Switch2
+  Type: UDT_Switch
+  Children:
+  - Name: BitState
+    Type: BaseDataVariableType
+    DataType: Boolean
+    DisplayName: {"LocaleId":"en-US","Text":"Switch 02 Bit Name"}
+    Children:
+    - Name: AuditSigning Signature
+      Type: AuditInfo
+      ReferenceType: NonHierarchicalOwning
+      Children:
+      - Name: Users
+        Type: BaseObjectType
+      - Name: Groups
+        Type: BaseObjectType
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../PLC_Sim/Bool2"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: MultiState
+    Type: BaseDataVariableType
+    DataType: Int32
+    DisplayName: {"LocaleId":"en-US","Text":"Switch 02 Int Name"}
+    Children:
+    - Name: AuditSigning Signature
+      Type: AuditInfo
+      ReferenceType: NonHierarchicalOwning
+      Children:
+      - Name: Users
+        Type: BaseObjectType
+      - Name: Groups
+        Type: BaseObjectType
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../PLC_Sim/Int2"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2

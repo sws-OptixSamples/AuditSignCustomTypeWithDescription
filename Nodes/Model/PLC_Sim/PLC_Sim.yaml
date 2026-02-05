@@ -1,0 +1,15 @@
+Name: PLC_Sim
+Type: FolderType
+Children:
+- Name: Bool1
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Bool2
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Int1
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Int2
+  Type: BaseDataVariableType
+  DataType: Int32
